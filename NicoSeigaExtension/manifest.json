@@ -1,0 +1,12 @@
+{
+	"name":"NicoSeigaExtension",
+	"version":"1",
+	"manifest_version":2,
+	"description":"Niconico Seiga Extension. Ranking Loader and Lightbox Inside",
+	"content_scripts":[{
+		"matches":["http://seiga.nicovideo.jp/illust/ranking/point/*"],
+		"js":["js/jquery-1.7.2.min.js","js/lightbox.js","nicoseiga.js"],
+		"css":["css/lightbox.css"]
+	}],
+	"web_accessible_resources":["images/close.png","images/loading.gif","images/next.png","images/prev.png"]
+}
